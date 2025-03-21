@@ -20,8 +20,8 @@ function App() {
     </div>;
   }
 
-  return (
-    <>
+return (
+    <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center"}} >
       {halak.map((hal) => (
         <MyCustomCard
           key={hal.id}
@@ -33,7 +33,7 @@ function App() {
           kep={hal.kep} // Ensure this prop is passed
         />
       ))}
-    </>
+    </div>
   );
 }
 

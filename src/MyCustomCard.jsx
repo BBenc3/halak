@@ -27,16 +27,16 @@ export const MyCustomCard = ({ id, nev, faj, meret, tonev, kep }) => {
 
     return (
         <>
-            <Card width="18rem" margin="1rem">
-                <Card.Img variant="top" src={`data:image/jpeg;base64,${kep}`} />
+            <Card width="18rem" margin="1rem" style={{maxWidth: "18rem", margin: "1rem"}}>
+                <Card.Img variant="top" src={`data:image/jpeg;base64,${kep}`}  />
                 <Card.Body>
                     <Card.Title>{nev}</Card.Title>
                     <Card.Text>
-                        <ul>
-                            <li>Faj: {faj}</li>
-                            <li>Méret: {meret}</li>
-                            <li>Tönev: {tonev}</li>
-                        </ul>
+
+                        Faj: {faj}<br />
+                        Méret: {meret}<br />
+                        Tönev: {tonev}<br />
+
                         <Button
                             variant="Danger"
                             onClick={() => {
